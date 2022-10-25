@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  serverd:
+    build: server
+    command: ["python3", "-u", "./server.py"]
+
+
+  clientd:
+    build: client
+    command: ["python3", "-u", "./client.py"]
