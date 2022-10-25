@@ -2,7 +2,10 @@
 import time
 import zmq
 
+# intialize ZMQ contextS
 context = zmq.Context()
+
+# socket Creating from  intitalized context
 socket = context.socket(zmq.REP)
 socket.bind("tcp://*:8001")
 
